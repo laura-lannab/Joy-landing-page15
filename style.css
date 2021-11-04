@@ -53,10 +53,124 @@ a:hover{
 
 /* CSS MAIN HOME */
 
+.busca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px; 
+    background-image: url(./imgs/Dormitorio4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.busca-texto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 20px; 
+    color: white;
+}
+.busca-texto h1{
+    border-bottom: 1px solid white;
+    font-weight: 700;
+    text-shadow: 2px 2px 0 rgba(0,0,0,.15);
+}
+
+.busca-imoveis{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;  
+}
+.box-busca{
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    color: #132235;
+    background-color: white;
+}
+
+.tipo{
+    padding: 20px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    color: #132235;
+}
+.busca-imoveis select:hover {
+    background: rgb(170, 170, 170);
+}
+
+.busca-imoveis input[type=text]{
+    padding: 20px;
+    font-size: 17px;
+    border: none; 
+    color: #132235;
+}
+.busca-imoveis button {
+    padding: 20px;
+    margin-left: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    color: #132235;
+}
+.busca-imoveis button:hover {
+    background: rgb(170, 170, 170);
+}
+
+
+.texto-box{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgb(247, 245, 245);
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, .1) 0 1px 2px 0;
+    box-sizing: border-box;
+    color: #333;
+    font-family: "CerebriSans-Regular","Roboto",sans-serif;
+    margin: 3em 10% 0;
+    padding: 40px;
+    text-align: center;
+    transition: all 350ms;   
+}
+.texto-box:hover {
+    box-shadow: rgba(56,60,67,.07) 0 0 0 1px,rgba(56,60,67,.15) 0 8px 14px 1px;
+}
+.texto-box1 {
+    color: #132235;
+    font-family: "CerebriSans-Bold","Roboto",sans-serif;
+    font-size: 2.5em;
+    font-weight: 400;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.texto-box2{
+    color: #666;
+    font-family: "CerebriSans-Regular","Roboto",sans-serif;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
 .wrapper-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .wrapper{
@@ -67,6 +181,7 @@ a:hover{
 
 .card{
     border-radius: 5px;
+    border: 1px solid #ccc;
     box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
     margin: 20px;
     width: 200px;
@@ -98,21 +213,78 @@ main img{
     height: 200px;
     position: relative;
     text-align: center;
+    padding-bottom: 50px;
+
 }
 
 .button-card button{
-    font-weight:600;
-    margin: auto;
-    display: block;
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
     color: #132235;
-    border: 2px solid #132235;
-    min-width: 48px;
-    height: 48px;
-    padding: 4px 16px;
-    border-radius: 20px;
-    text-transform: none;
     cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
 }
+.button-card button:hover{
+    background: #F6F9FE;
+    color: #1467d3;
+}
+.button-card button:hover:active{
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+}
+
+.button-card button:focus {
+    outline: none;
+    border: 2px solid mediumturquoise;
+}
+
+/* CSS MAIN IMÓVEIS PARA ALUGAR */
+
+.container-imoveis{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    
+}
+.seletor-container{
+    flex-grow: 0.5;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.all{
+    flex-grow: 2;
+}
+
+
 
 /* CSS MAIN IMÓVEIS PARA ALUGAR */
 
