@@ -39,44 +39,72 @@
             <a href=""><button>Entrar</button></a>
         </div>
         
-        </header>
-    <nav>
-        <form>
-            <div class="seletor-bairro">
-                <label class="">
-                    <span>Bairro</span>
-                </label>
-                <div class="">
-                    <input class="" placeholder="Busque pelo bairro" type="text" value="">
+    </header>
+    <main>
+        <div class="container-imoveis">
+            <section class="seletor-container">
+                <div class="seletor-titulo">
+                    <h4>Filtrar resultados</h4>
                 </div>
-            </div>
-            <div class="seletor-aluguel">
-                <label class="">
-                    <span>Aluguel até</span>
-                </label>
-                <div>
-                    <input type="number" id="quantidade" name="quantity" min="1" max="10000">
+                <div class="seletor-bairro">
+                    <label class="">Localização</label>
+                    <div class="">
+                        <input class="" placeholder="Busque pelo bairro" type="text" value="">
+                    </div>
                 </div>
-            </div>
-            <div class="seletor-aluguel">
-                <label class="">
-                    <span>Quartos</span>
-                </label>
-                <div>
-                    <input type="number" id="quantidade" name="quantity" min="1" max="10000">
+                <div class="seletor-tipo">
+                    <label class="">Tipo de imóvel</label>
+                    <div class="">
+                        <select  name="select-tipo" default="teste" data-size="1">
+                            <option value="todos os tipos">Nenhum selecionado</option>
+                            <option value="apartamento">1 quarto</option>
+                            <option value="kitnet">2 quartos</option>
+                            <option value="casa">3 quartos</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <div class="botão">
-                <button class="botao-container">
-                    <span class="botao-label">Procurar imóveis</span>
-                </button>
-            </div>
-        </form>
-    </nav>
-    <section>
+                <div class="seletor-aluguel">
+                    <label class="">Valor</label>
+                    <div class="seletor-aluguel-minimo">
+                        <input type="text" name="valor-min" placeholder="mínimo">
+                    </div>
+                    <div class="seletor-aluguel-maximo">
+                        <input type="text" name="valor-max" placeholder="máximo">
+                    </div>
+                </div>
+                <div class="seletor-aluguel">
+                    <label class="">Quartos</label>
+                    <div class="quarto">
+                        <select  name="select-quarto" default="teste" data-size="1">
+                            <option value="nenhum">Nenhum selecionado</option>
+                            <option value="1">1 quarto</option>
+                            <option value="2">2 quartos</option>
+                            <option value="3">3 quartos</option>
+                            <option value="4">4 quartos</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="seletor-botao">
+                    <button>Procurar imóveis</button>
+                </div>
+            </section>
 
-    </section>
-
+            <section class="all">
+                <div class="cards">
+                    <div class="card">ONE</div>
+                    <div class="card">TWO</div>
+                    <div class="card">THREE</div>
+                    <div class="card">FOUR</div>
+                    <div class="card">FIVE</div>
+                    <div class="card">SIX</div>
+                    <div class="card">SEVEN</div>
+                    <div class="card">EIGHT</div>
+                    <div class="card">NINE</div>
+                    <div class="card">TEN</div>
+                  </div>
+            </section>
+        </div>
+    </main>
     <footer>
         <div class="logo">
             <a href=""><img src="imgs/f4life2.png" alt="logoFooter"></a>
