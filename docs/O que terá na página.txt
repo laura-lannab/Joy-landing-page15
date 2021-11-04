@@ -1,0 +1,44 @@
+Paleta do site, de acordo com a logo:
+#6DDAD3 (medium turquoise)
+#FFFFFF (white)
+#132235 (oxford blue)
+
+Header:
+	Logo da empresa, fundo com uma das cores (talvez a mais escura, azul marinho), seção de home, produtos (imóveis para alugar), como funciona, sobre nós, contato, conta(talvez? ficaria interessante)
+	O header ficaria fixo ao deslizar a tela.
+
+Main HOME:
+	Opção de busca de imóveis, com cídade, bairro, valores e quartos.
+	Botão de busca dos imóveis.
+	Uma vitrine de visualização rápida (em forma de cards), com fotos e descrição do imóvel.
+	Um botão que direcione para a seção de imóveis para alugar (buscar mais imóveis para alugar).
+	Uma frase  e descrição que chame atenção dos usuários para a facilidade que é alugar imóveis conosco.
+	Um link clicável que direciona para a seção de como funciona o aluguél dos imóveis.
+	
+Main IMÓVEIS PARA ALUGAR:
+
+	Lateral de navegação com opção de busca de imóveis para alugar (placeholder escrito "digite uma cidade, região, bairro ou rua"), com seleção de kitnet, apartamento ou casa, valores mínimo e máximo. Interessante ter ícone de lupa.
+	Uma section com as fotos dos imóveis, descrição (valor do aluguel, condomínio e iptu) e botão para mandar mensagem para o dono do imóvel.
+
+Main COMO FUNCIONA:
+	Seção, tipo blog, falando como é mais fácil alugar conosco, com fotos. O texto seria basicamente para falar que não precisa de fiador.
+	Exemplo: https://meulugar.quintoandar.com.br/alugar-sem-fiador-possivel-no-quinto-andar/
+
+
+Main SOBRE NÓS:
+
+	Seção contendo texto informativo (tempo de mercado, quantas possuem pela região/estado/país). Maior portal de imóveis universitários.
+	Quem são os parceiros (fictícios) com as respectivas imagens.
+
+
+Main CONTATO:
+	Conter um formulário com especificações (cliente, proprietário, investidor... selecionáveis), nome, email, telefone e mensagem.
+	Botão de enviar.
+	
+
+Footer:
+	Interessante ter um background que contraste com a cor do header, mas seguindo a paleta de cores proposta. (talvez o turquesa)
+	Possuir redes sociais, com ícones clicáveis e que redirecionam para as respectivas redes.
+	Listas com as páginas de contato e sobre nós.
+	Colocar o ícone da logo.
+	Texto enaltecendo a empresa

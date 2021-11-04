@@ -1,0 +1,9 @@
+Ela deve apresentar informações sobre a empresa, produtos, etc. de forma a atrair clientes.
+
+A página deve:
+	Ser responsiva no geral mas testada especificamente no iPhone 6/7/8.
+	Para a versão desktop terá que ser testado em uma tela de 1280px de largura.
+	Links com ícone para as redes sociais contendo Twitter, Facebook e Instagram. Estas páginas devem ser abertas em uma nova aba.
+	Seguir uma paleta de cores baseada na logomarca provida pelo cliente.
+	Conter ao menos 2 seções: Home (landing page), Nossos Produtos(kitnets, apartamentos e casas de república para aluguéis), Como funciona (explicando mais sobre a facilidade de alugar conosco), Sobre nós (opcional, interessante ter para falar mais sobre a empresa), Contato (formulário para entrar em contato com a empresa, caso tenha dúvidas, interesse em alocar imóveis, investimentos...).
+	Visual simples e fácil de entender e achar as funcionalidades.
