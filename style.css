@@ -10,6 +10,20 @@ body{
 
 /* CSS HEADER */
 
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 50%;
+    flex-wrap: wrap;
+}
+
+.item-menu {
+    padding: 20px;
+    font-size: 15px;
+}
+
 .links{
     display: flex;
     justify-content: space-between;
@@ -317,3 +331,74 @@ footer{
 .direitos{
     padding-top: 50px;
 }
+
+ @media screen and (min-device-width :320px) and (max-device-width : 480px) {
+     .links {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         margin: auto;
+     }
+
+     body {
+        width: 100%;
+     }
+
+     .menu {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0%;
+     }
+    .tipo {
+        width: 100%;
+    }
+
+    .localizacao {
+        width: 100%;
+        text-align: center;
+    }
+
+    .botao-buscar {
+      padding: 30px;  
+      width: 100%;
+      font-size: 20px;
+    }
+
+    .busca {
+        display: flex;
+        flex-direction: column;
+        
+        
+        margin: 0%;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-como-funciona {
+        height: 200vh;
+        width: 100%;
+        margin: 0%;
+    }
+
+
+
+
+
+ }
+     /*  {
+         max-width: 480px;
+         font-size: 1.0em;
+         background: blueviolet;
+     }
+       
+     menu { 
+        background-color:chartreuse;
+        padding: 0 20px;
+        
+             }
+     
+  */
