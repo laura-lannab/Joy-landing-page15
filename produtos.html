@@ -9,34 +9,35 @@
 </head>
 <body>
     <header>
-        <div class="links">
-            <div>
-                <a href=""><img src="imgs/f4life2.png" width = 200px alt="logo"></a>
-            </div>
-    
-            <div>
-                <a href="">Home</a>
-            </div>
-                
-            <div>
-                <a href="">Imóveis para alugar</a>
-            </div>
-                
-            <div>
-                <a href="">Como funciona</a>
-            </div>
-                
-            <div>
-                <a href="">Sobre nós</a>
-            </div>
+        <div class="links">         
             
-            <div>
-                <a href="">Contato</a>
-            </div>   
+            <div class="menu-logo">
+                <a href="index.html"><img src="imgs/f4life2.png" width = 200px alt="logo"></a>
+            </div>
+
+            <div class="menu-home">
+    
+                <div class="menu-aba">
+                    <a href="index.html">Home</a>
+                </div>
+                    
+                <div class="menu-aba">
+                    <a href="produtos.html">Imóveis para alugar</a>
+                </div>
+                    
+                <div class="menu-aba">
+                    <a href="comofunciona.html">Como funciona</a>
+                </div>
+                    
+                <div class="menu-aba">
+                    <a href="contato.html">Contato</a>
+                </div>  
+            
+            </div>
         </div>
 
         <div class="botão-entrar">
-            <a href=""><button>Entrar</button></a>
+            <button class="teste">Entrar</button>
         </div>
         
     </header>
@@ -47,9 +48,9 @@
                     <h4>Filtrar resultados</h4>
                 </div>
                 <div class="seletor-bairro">
-                    <label class="">Localização</label>
-                    <div class="">
-                        <input class="" placeholder="Busque pelo bairro" type="text" value="">
+                    <label class="seletor-bairro-titulo">Localização</label>
+                    <div class="seletor-bairro-placeholder">
+                        <input  placeholder="Busque pelo bairro" type="text" value="">
                     </div>
                 </div>
                 <div class="seletor-tipo">
@@ -57,9 +58,9 @@
                     <div class="">
                         <select  name="select-tipo" default="teste" data-size="1">
                             <option value="todos os tipos">Nenhum selecionado</option>
-                            <option value="apartamento">1 quarto</option>
-                            <option value="kitnet">2 quartos</option>
-                            <option value="casa">3 quartos</option>
+                            <option value="apartamento">Apartamento</option>
+                            <option value="kitnet">Casa</option>
+                            <option value="casa">Kitnet</option>
                         </select>
                     </div>
                 </div>
@@ -89,19 +90,101 @@
                 </div>
             </section>
 
-            <section class="all">
-                <div class="cards">
-                    <div class="card">ONE</div>
-                    <div class="card">TWO</div>
-                    <div class="card">THREE</div>
-                    <div class="card">FOUR</div>
-                    <div class="card">FIVE</div>
-                    <div class="card">SIX</div>
-                    <div class="card">SEVEN</div>
-                    <div class="card">EIGHT</div>
-                    <div class="card">NINE</div>
-                    <div class="card">TEN</div>
-                  </div>
+            <section class="card-container-imoveis">
+                <div class="cards-container">
+                    <h3 class="card-imoveis-titulo-h3"> Imóveis para alugar em São Paulo - SP</h3>
+                    <p class="card-imoveis-titulo-p">10 resultados encontrados para sua busca</p>
+                    <div class="card-imoveis">
+                        <img src="./imgs/apê1.png">
+                        <div class="card-imoveis-info">
+                            <h4>Apartamento 3 quartos para alugar, 75m²</h4>
+                            <p>Rua Artur Prado, Bela Vista, SP - SP</p>
+                            <p>R$ 1.990 / mês</p>
+                            <p>Valor mensal inclui: IPTU, condomínio, água, energia, gás, internet, manutenções e limpeza semanal</p>
+                        </div>
+                    </div>
+                    <div class="card-imoveis">
+                        <img src="./imgs/apê2.png">
+                        <div class="card-imoveis-info"> 
+                            <h4>Apartamento 4 quartos para alugar, 90m²</h4>
+                            <p>Rua Bartolomeu Feio, Brooklin, SP - SP</p>
+                            <p>R$ 2.140 / mês</p>
+                            <p>Valor mensal inclui: IPTU e condomínio, água, energia, gás, internet, manutenções e limpeza semanal, elevador social, portaria 24h, salão de festa, garagem</p>
+                        </div>
+                    </div>
+                    <div class="card-imoveis">
+                        <img  src="./imgs/apê3.png">
+                        <div class="card-imoveis-info">
+                            <h4>Apartamento 4 quartos para alugar, 138m²</h4>
+                            <p>Rua São Carlos do Pinhal, Bela Vista, SP - SP</p>
+                            <p>R$ 2.550 / mês</p>
+                            <p>Valor mensal inclui: mobília, IPTU e condomínio água, energia, gás, internet, manutenções e limpeza semanal, academia, portaria 24h, bicicletário, salão de festas, elevador social, playground, garagem</p>
+                        </div>
+                    </div>
+                    <div class="card-imoveis">
+                        <img src="./imgs/apê4.png">
+                        <div class="card-imoveis-info">
+                            <h4>Apartamento 4 quartos para alugar, 114m²</h4>
+                            <p>Avenida Paulista, Paraíso, SP - SP</p>
+                            <p>R$ 2.760 / mês</p>
+                            <p>Valor mensal inclui: IPTU e condomínio, água, energia, gás, internet, manutenções e limpeza semanal, elevador social, playground, portaria 24h, salão de festas, garagem</p>
+                        </div>
+                    </div>
+                    <div class="card-imoveis">
+                        <img src="./imgs/apê5.png">
+                        <div class="card-imoveis-info">
+                            <h4>Apartamento 3 quartos para alugar, 114m²</h4>
+                            <p>Rua Tomás Carvalhal, Paraíso, SP - SP</p>
+                            <p>R$ 2.360 / mês</p>
+                            <p>Valor mensal inclui: IPTU e condomínio, água, energia, gás, internet, manutenções e limpeza semanal</p>
+                        </div>
+                    </div>
+                    <div class="card-imoveis">
+                        <img src="./imgs/apê6.png">
+                        <div class="card-imoveis-info">
+                            <h4>Kitnet com banheiro privativo e copa</h4>
+                            <p>R. Maestro Cardim, Bela Vista, São Paulo - SP</p>
+                            <p>R$2.550 / mês</p>
+                            <p>Valor mensal inclui: condomínio, manutenção, IPTU, água, gás e internet</p>
+                        </div>
+                    </div>
+                    <div class="card-imoveis">
+                        <img src="./imgs/apê7.png">
+                        <div class="card-imoveis-info">
+                            <h4>Kitnet com banheiro privativo e cozinha compartilhada no andar</h4>
+                            <p>Rua Maestro Cardim, Bela Vista, SP - SP</p>
+                            <p>R$2.300 / mês</p>
+                            <p>Valor mensal inclui: mobília, condomínio, manutenção, IPTU, água, gás e internet</p>
+                        </div>
+                    </div>
+                    <div class="card-imoveis">
+                        <img src="./imgs/apê8.png">
+                        <div class="card-imoveis-info">
+                            <h4>Kitnet com banheiro privativo e cozinha compartilhada no andar</h4>
+                            <p>R. Maestro Cardim, Bela Vista, SP - SP</p>
+                            <p>R$2.450 / mês</p>
+                            <p>Valor mensal inclui: mobília, condomínio, manutenção, IPTU, água, gás e internet</p>
+                        </div>
+                    </div>
+                    <div class="card-imoveis">
+                        <img src="./imgs/apê9.png">
+                        <div class="card-imoveis-info">
+                            <h4>Kitnet com banheiro privativo e cama alta</h4>
+                            <p>Alameda Lorena, Jardins, SP - SP</p>
+                            <p>R$ 1.999 / mês</p>
+                            <p>Valor mensal inclui: mobília, condomínio, manutenção, IPTU, água, gás e internet</p>
+                        </div>
+                    </div>
+                    <div class="card-imoveis">
+                        <img src="./imgs/apê10.png">
+                        <div class="card-imoveis-info">
+                            <h4>Kitnet com banheiro privativo</h4>
+                            <p>Alameda Lorena, Jardins, SP - SP</p>
+                            <p>R$ 2.350 / mês</p>
+                            <p>Valor mensal inclui: mobília, condomínio, manutenção, IPTU, água, gás e internet</p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
@@ -118,9 +201,11 @@
         <div>
             <p>Acesse nossas redes sociais</p>
             <br>
-            <a href="https://pt-br.facebook.com/"><img src="imgs/facebook.png" width= 30px  alt="logoFacebook"></a>
-            <a href="https://www.instagram.com/"><img src="imgs/instagram.png" width= 30px alt="logoInstagram"></a>
-            <a href="https://twitter.com/"><img src="imgs/twitter.png" width= 30px alt="logoTwitter"></a>
+            <div class="footer-img">
+                <a href="https://pt-br.facebook.com/"><img src="imgs/facebook.png" width= 30px  alt="logoFacebook"></a>
+                <a href="https://www.instagram.com/"><img src="imgs/instagram.png" width= 30px alt="logoInstagram"></a>
+                <a href="https://twitter.com/"><img src="imgs/twitter.png" width= 30px alt="logoTwitter"></a>
+            </div>
         </div>
     </footer>
 
