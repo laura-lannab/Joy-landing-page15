@@ -1,142 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>F4Life</title>
 </head>
-
 <body>
 
     <header>
-        <div class="links">
-            <div>
-                <a href="index.html"><img src="imgs/f4life2.png" width=200px alt="logo"></a>
+        <div class="links">         
+            
+            <div class="menu-logo">
+                <a href="index.html"><img src="imgs/f4life2.png" width = 200px alt="logo"></a>
             </div>
 
-            <div class="menu">
-                <div class="item-menu">
+            <div class="menu-home">
+    
+                <div class="menu-aba">
                     <a href="index.html">Home</a>
                 </div>
-
-                <div class="item-menu">
+                    
+                <div class="menu-aba">
                     <a href="produtos.html">Imóveis para alugar</a>
                 </div>
-
-                <div class="item-menu">
+                    
+                <div class="menu-aba">
                     <a href="comofunciona.html">Como funciona</a>
                 </div>
-
-                <div class="item-menu">
+                    
+                <div class="menu-aba">
                     <a href="contato.html">Contato</a>
-                </div>
-            </div>
-
-            <div class="botão-entrar">
-                <a href=""><button>Entrar</button></a>
+                </div>  
+            
             </div>
         </div>
+
+        <div class="botão-entrar">
+            <button class="teste">Entrar</button>
+        </div>
+        
     </header>
 
-
-    <main class="main-home">
-        <section class="busca">
-            <div class="busca-texto">
-                <h1>Alugue seu imóvel num piscar de olhos</h1>
-            </div>
-            <div class="busca-imoveis">
-                <div class="box-busca">
-                    <select class="tipo" name="select-tipo" default="teste" data-size="1">
-                        <option value="todos">Todos os tipos</option>
-                        <option value="apartamento">Apartamento</option>
-                        <option value="casa">Casa</option>
-                        <option value="kitnet">Kitnet</option>
-                    </select>
-                    <label class="localizacao">
-                        <input class="busca-localizacao" type="text" placeholder="Busque pelo bairro">
-                    </label>
+        <main class="main-home">
+            <div class="busca">
+                <div class="busca-texto">
+                    <h1>Alugue seu imóvel num piscar de olhos</h1>
                 </div>
-
+                <div class="busca-imoveis">
+                    <div class="box-busca">        
+                        <select class="tipo" name="select-tipo" default="teste" data-size="1">
+                            <option value="todos">Todos os tipos</option>
+                            <option value="apartamento">Apartamento</option>
+                            <option value="casa">Casa</option>
+                            <option value="kitnet">Kitnet</option>
+                        </select>
+                        <label class="localizacao">
+                            <input class="busca-localizacao" type="text" placeholder="Busque pelo bairro">
+                        </label>
+                        <a href="produtos.html">
+                            <button class="teste2" type="button">Buscar imóveis</button>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div>
+            <div class="texto-box">
+                <div class="texto-box1">
+                    <h3>Para você, estudante, que quer alugar</h3>
+                </div>
+                <div class="texto-box2">
+                    <p>Rápido, sem fiador ou depósito caução. </p>
+                </div>
+                <div class="texto-box2">
+                    <p>Agendamento online, feche negócio direto com o proprietário e assine um contrato digital: sem fila no cartório!</p>
+                </div>
+                <div class="texto-box-link">
+                    <a target="_blank" href="comofunciona.html" class="" aria-label="Saber mais sobre alugar na F4Life" href="sobre.html">Saber mais sobre alugar na F4Life</a>
+                </div>
+            </div>
+            <section class="wrapper-container">
+                <div class="wrapper">
+                    <div class="card">
+                        <img src="./imgs/apê1 quarto 2.1.jpg" alt="Imagem de um quarto com cama, armário e mesa de estudos">
+                        <div class="info">
+                            <p class="card-p">Apartamento</p>
+                            <h1 class="card-h1">R. Artur Prado, Bela Vista, SP</h1>
+                            <p class="card-p">Aluguel | R$ 1.990</p>
+                            <p class="card-p">3 quartos</p>
+                            <p class="card-p">75m²</p>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <img src="./imgs/apê2 quarto4.2.jpg" alt="Imagem de um quarto com cama, armário e mesa de estudos">
+                        <div class="info">
+                            <p class="card-p">Apartamento</p>
+                            <h1 class="card-h1">R. Bartolomeu Feio, Brooklin, SP</h1>
+                            <p class="card-p">Aluguel | R$ 2.140</p>
+                            <p class="card-p">4 quartos</p>
+                            <p class="card-p">90m²</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="./imgs/apê3 quarto2.2.jpg" alt="Imagem de um quarto com cama, armário e mesa de estudos">
+                        <div class="info">
+                            <p class="card-p">Apartamento</p>
+                            <h1 class="card-h1">R. São Carlos do Pinhal, Bela Vista, SP</h1>
+                            <p class="card-p">Aluguel | R$ 2.550</p>
+                            <p class="card-p">4 quartos</p>
+                            <p class="card-p">138m²</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="./imgs/apê4 quarto2.1.jpg" alt="Imagem de um quarto com cama, armário e mesa de estudos">
+                        <div class="info">
+                            <p class="card-p">Apartamento</p>
+                            <h1 class="card-h1">Avenida Paulista, Paraíso, SP</h1>
+                            <p class="card-p">Aluguel | R$ 2.760</p>
+                            <p class="card-p">4 quartos</p>
+                            <p class="card-p">114m²</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="button-card">
                 <a href="produtos.html">
-                    <button class="botao-buscar" type="button">Buscar imóveis</button>
+                    <button type="button">Buscar mais imóveis</button>
                 </a>
             </div>
-        </section>
-        <div class="texto-box">
-            <div class="texto-box1">
-                <h3>Para você, estudante, que quer alugar</h3>
-            </div>
-            <div class="texto-box2">
-                <p>Rápido, sem fiador ou depósito caução. </p>
-            </div>
-            <div class="texto-box2">
-                <p>Agendamento online, feche negócio direto com o proprietário e assine um contrato digital: sem fila no
-                    cartório!</p>
-            </div>
-            <div class="texto-box-link">
-                <a target="_blank" href="comofunciona.html" class="" aria-label="Saber mais sobre alugar na F4Life"
-                    href="sobre.html">Saber mais sobre alugar na F4Life</a>
-            </div>
-        </div>
-        <section class="wrapper-container">
-            <div class="wrapper">
-                <div class="card">
-                    <img src="./imgs/apê1 quarto 2.1.jpg" alt="Imagem de um quarto com cama, armário e mesa de estudos">
-                    <div class="info">
-                        <p class="card-p">Apartamento</p>
-                        <h1 class="card-h1">Rua,bairro, São Paulo</h1>
-                        <p class="card-p">Aluguel | R$ 1.500</p>
-                        <p class="card-p">2 quartos</p>
-                        <p class="card-p">80m²</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./imgs/apê2 quarto4.2.jpg" alt="Imagem de um quarto com cama, armário e mesa de estudos">
-                    <div class="info">
-                        <p class="card-p">Apartamento</p>
-                        <h1 class="card-h1">Rua,bairro, São Paulo</h1>
-                        <p class="card-p">Aluguel | R$ 1.500</p>
-                        <p class="card-p">2 quartos</p>
-                        <p class="card-p">80m²</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./imgs/apê3 quarto2.2.jpg" alt="Imagem de um quarto com cama, armário e mesa de estudos">
-                    <div class="info">
-                        <p class="card-p">Apartamento</p>
-                        <h1 class="card-h1">Rua,bairro, São Paulo</h1>
-                        <p class="card-p">Aluguel | R$ 1.500</p>
-                        <p class="card-p">2 quartos</p>
-                        <p class="card-p">80m²</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./imgs/apê4 quarto2.1.jpg" alt="Imagem de um quarto com cama, armário e mesa de estudos">
-                    <div class="info">
-                        <p class="card-p">Apartamento</p>
-                        <h1 class="card-h1">Rua,bairro, São Paulo</h1>
-                        <p class="card-p">Aluguel | R$ 1.500</p>
-                        <p class="card-p">2 quartos</p>
-                        <p class="card-p">80m²</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="button-card">
-            <a href="produtos.html">
-                <button type="button">Buscar mais imóveis</button>
-            </a>
-        </div>
-    </main>
-
+        </main>
+    
     <footer>
         <div class="logo">
             <a href=""><img src="imgs/f4life2.png" alt="logoFooter"></a>
@@ -150,12 +146,13 @@
         <div>
             <p>Acesse nossas redes sociais</p>
             <br>
-            <a href="https://pt-br.facebook.com/"><img src="imgs/facebook.png" width=30px alt="logoFacebook"></a>
-            <a href="https://www.instagram.com/"><img src="imgs/instagram.png" width=30px alt="logoInstagram"></a>
-            <a href="https://twitter.com/"><img src="imgs/twitter.png" width=30px alt="logoTwitter"></a>
+            <div class="footer-img">
+                <a href="https://pt-br.facebook.com/"><img src="imgs/facebook.png" width= 30px  alt="logoFacebook"></a>
+                <a href="https://www.instagram.com/"><img src="imgs/instagram.png" width= 30px alt="logoInstagram"></a>
+                <a href="https://twitter.com/"><img src="imgs/twitter.png" width= 30px alt="logoTwitter"></a>
+            </div>
         </div>
     </footer>
 
 </body>
-
 </html>

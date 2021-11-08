@@ -31,6 +31,13 @@ body{
     width: 70%;
 }
 
+.menu-home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
 header{
     background-color: #132235;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
@@ -73,22 +80,24 @@ a:hover{
     align-items: center;
     justify-content: center;
     padding: 70px; 
-    background-image: url(./imgs/Dormitorio4.jpg);
+    background-image: url(./imgs/dormitorio4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .busca-texto{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding-top: 100px;
     padding-bottom: 20px; 
     color: white;
 }
+
 .busca-texto h1{
-    border-bottom: 1px solid white;
     font-weight: 700;
     text-shadow: 2px 2px 0 rgba(0,0,0,.15);
 }
@@ -126,6 +135,7 @@ a:hover{
     border: none; 
     color: #132235;
 }
+
 .busca-imoveis button {
     padding: 20px;
     margin-left: 16px;
@@ -181,6 +191,7 @@ a:hover{
 
 .wrapper-container{
     display: flex;
+
     justify-content: center;
     align-items: center;
     padding-top: 100px;
@@ -189,6 +200,7 @@ a:hover{
 
 .wrapper{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -204,12 +216,19 @@ a:hover{
 
 .card:hover {
     transform: translateY(-5px);
-    cursor: pointer;
+
+}
+
+.info{
+    padding: 5px;
+    height: 80px;
+    text-align: left;
 }
 
 .card h1{
     color: #132235;
-    font-size: 14px;
+    font-size: 9px;
+    font-weight: bold;
     background-color: white;
 }
 
@@ -217,6 +236,7 @@ a:hover{
     color: #132235;
     font-size: 10px;
     background-color: white;
+    padding-bottom: 2px;
 }
 
 main img{
@@ -243,7 +263,7 @@ main img{
     cursor: pointer;
     display: inline-flex;
     fill: currentcolor;
-    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-family: "Google Sans","Roboto",Arial,sans-serif;
     font-size: 14px;
     font-weight: 500;
     height: 48px;
@@ -394,6 +414,32 @@ main img{
     font-size: small;
 }
 
+.card-imoveis img{
+    width: 300px;
+}
+
+
+.card-imoveis-titulo-h3{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: #132235;
+    font-family: "CerebriSans-Regular","Roboto",sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-imoveis-titulo-p{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: "CerebriSans-Regular","Roboto",sans-serif;
+    justify-content: center;
+    align-items: center;
+    color: dimgray;
+    font-size: small;
+}
+
 /* CSS COMO FUNCIONA */
 
 .comoFunciona{
@@ -432,7 +478,41 @@ main img{
     border: solid grey 0.5px;
 }
 
-/* CSS SOBRE NÓS */
+.comoFunciona{
+    background-color: #ffffff;
+    padding: 30px;
+    font-family: "CerebriSans-Bold","Roboto",sans-serif;
+}  
+
+.comoFunciona .imagemEtexto{
+    background-color: #ffffff;
+    padding: 30px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}  
+
+.comoFunciona .perguntas1{
+    grid-column: 2/ span 2;
+}
+
+.comoFunciona .perguntas2{
+    grid-column: 1/ span 2;
+}
+
+.comoFunciona .perguntas3{
+    grid-column: 2/ span 2;
+}
+
+.comoFunciona img{
+    width: 200px; 
+    border-radius: 50%;
+    border: solid grey 0.5px;
+}
 
 
 /* MAIN CONTATO */
@@ -501,73 +581,129 @@ footer{
     padding-top: 50px;
 }
 
- @media screen and (min-device-width :320px) and (max-device-width : 480px) {
-     .links {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         margin: auto;
-     }
+/* Responsividade */
 
-     body {
-        width: 100%;
-     }
-
-     .menu {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        margin: 0%;
-     }
-    .tipo {
-        width: 100%;
-    }
-
-    .localizacao {
-        width: 100%;
-        text-align: center;
-    }
-
-    .botao-buscar {
-      padding: 30px;  
-      width: 100%;
-      font-size: 20px;
-    }
-
-    .busca {
+@media (max-width: 800px) {
+    .links{
         display: flex;
         flex-direction: column;
-        
-        
-        margin: 0%;
+        width: 100%;
+    }
+    .menu-logo img{
+        height: 4em; 
+        width: 10em;  
+        align-items: center; 
+    }
+    .menu-home{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+    }
+    .menu-aba{
+        padding: 10px;
+    }
+    .teste{
+        display: none;
     }
 
-    .wrapper {
+    .busca-imoveis{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tipo{
+        width: 100%;
+    }
+    
+    .teste2{
+        width: 20rem;    
+    }
+
+    .wrapper-container{
         display: flex;
         flex-direction: column;
     }
 
-    .main-como-funciona {
-        height: 200vh;
-        width: 100%;
-        margin: 0%;
+    .wrapper{
+        display: flex;
+        flex-direction: column;
     }
 
 
 
 
+    .container-imoveis{
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seletor-container{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        height: 50vh;
+    }
+    .card-container-imoveis{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-imoveis{
+        width: 100vw;
+        height: auto;
+    }
+    .card-imoveis-info{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 2px;
+        font-size: smaller;
+    }
+    .card-imoveis-titulo-p{
+        padding-bottom: 5px;
+        text-align: left;
+    }
+    
+    .comoFunciona{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagemEtexto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .direitos{
+        margin-bottom: 50px;
+    }
+
+    .footer-img {
+        display: flex;
+        justify-content: space-evenly;
+    }
 
 }
-     /*  {
-         max-width: 480px;
-         font-size: 1.0em;
-         background: blueviolet;
-     }
-       
-     menu { 
-        background-color:chartreuse;
-        padding: 0 20px;
-        
-             }
-     
-  */
