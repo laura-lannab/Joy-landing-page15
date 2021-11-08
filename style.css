@@ -10,6 +10,20 @@ body{
 
 /* CSS HEADER */
 
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 50%;
+    flex-wrap: wrap;
+}
+
+.item-menu {
+    padding: 20px;
+    font-size: 15px;
+}
+
 .links{
     display: flex;
     justify-content: space-between;
@@ -400,11 +414,69 @@ main img{
     font-size: small;
 }
 
+.card-imoveis img{
+    width: 300px;
+}
 
 
+.card-imoveis-titulo-h3{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: #132235;
+    font-family: "CerebriSans-Regular","Roboto",sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-imoveis-titulo-p{
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: "CerebriSans-Regular","Roboto",sans-serif;
+    justify-content: center;
+    align-items: center;
+    color: dimgray;
+    font-size: small;
+}
 
 /* CSS COMO FUNCIONA */
 
+.comoFunciona{
+    background-color: #ffffff;
+    padding: 30px;
+    font-family: "CerebriSans-Bold","Roboto",sans-serif;
+}  
+
+.comoFunciona .imagemEtexto{
+    background-color: #ffffff;
+    padding: 30px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}  
+
+.comoFunciona .perguntas1{
+    grid-column: 2/ span 2;
+}
+
+.comoFunciona .perguntas2{
+    grid-column: 1/ span 2;
+}
+
+.comoFunciona .perguntas3{
+    grid-column: 2/ span 2;
+}
+
+.comoFunciona img{
+    width: 200px; 
+    border-radius: 50%;
+    border: solid grey 0.5px;
+}
 
 .comoFunciona{
     background-color: #ffffff;
@@ -564,6 +636,7 @@ footer{
 
 
     .container-imoveis{
+
         display: flex;
         flex-direction: column;
     }
