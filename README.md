@@ -2,7 +2,7 @@
 
 ### Descrição do Projeto
 
-Site criado para o site de imóveis F4life, interface criada com inspiração em grandes sites de imobiliárias como Quinto Andar e Loft!
+Site criado utilizando HTML e CSS, para o site de imóveis F4life, interface criada com inspiração em grandes sites de imobiliárias como Quinto Andar e Loft!
 
 ### Desenvolvido por:
 - Jéssica Soares Fernandes
